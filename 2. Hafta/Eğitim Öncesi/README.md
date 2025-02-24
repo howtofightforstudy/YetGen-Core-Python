@@ -21,11 +21,10 @@ Tıpkı sep parametresi gibi end parametresi de print() fonksiyonunda görünmes
 * Değişkenler verilerin sonradan değiştirilmesine olanak sağladığı için çok kullanışlıdır.
 * Kodlar sırayla çalışır.
 
-* Bir değişken tanımlarken
+* Bir değişken tanımlarken aşağıdaki yapıyı kullanacağız.
 ```
 değişken ismi = atanacak değer
 ```
-yapısını kullanabiliriz
 
 **4. Type fonksiyonu**
 
