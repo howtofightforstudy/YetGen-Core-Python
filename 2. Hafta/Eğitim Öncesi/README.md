@@ -26,6 +26,31 @@ Tıpkı sep parametresi gibi end parametresi de print() fonksiyonunda görünmes
 değişken ismi = atanacak değer
 ```
 
+**Değişken Tanımlama Kuralları**
+* Değişken adlarında sayılar, harfler ya da alt çizgi kullanılabilir ama değişken isimlendirmeleri alt çizgi ya da harfle başlar.
+```
+1berkcan = 5  Hatalı bir adlandırma
+berkcan1 = 5  Doğru bir adlandırma
+_berkcan = 5  Doğru bir adlandırma
+```
+Değişken adlandırırken Türkçe karakter kullanmamaya özen göstermeliyiz.
+```
+ağırlık = 5  Hatalı kullanım
+agirlik = 5  Doğru kullanım
+```
+
+* Değişken isimlendirirken boşluk kullanılmaz. Genellikle camelCase adlandırma yaparız<br>
+(**camelCase:** ilk kelimenin harfi küçük, ondan sonra gelecek kelimelerin ilk harfi büyük ve bütün kelimeler bitişik kullanımdır)
+```
+isim soyisim = "Berkcan Gümüşışık"
+isimSoyisim = "Berkcan Gümüşışık"
+isim_soyisim = "Berkcan Gümüşışık"
+```
+
+* Python anahtar kelimeleri kullanılmaz [bknz](https://www.bilgigunlugum.net/prog/python/python_keywords)
+* Değişken adlandırılırken rakamla başlayamaz.
+* Değişken adları ne çok kısa ne de çok uzun olamlıdır. Aynı zamanda kodu okuyan kişi değişkenin ne için kullanıldığını anlaması gerekir.
+
 **4. Type fonksiyonu**
 
 **5. Sayı veri türleri ve matematiksel işlemler**
