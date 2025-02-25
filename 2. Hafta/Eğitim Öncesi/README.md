@@ -78,8 +78,7 @@ toplama(+), çıkarma(-), çarpma(*), bölme(/), üs alma(**), mod alma(%), tam 
 * Metinsel ifadelerde eğer tek tırnak ile başlandıysa tek tırnak ile devam edilmesi gerekmektedir.
 * Metinsel ifadelerin index ile ulaşma imkanı sağlar. Yazılımda index 0'dan başlar.<br>
 (mesela "Merhaba Dünya" metninin 2. indexinde r vardır)
-![örnek1](/2.%20Hafta/photo/YetNot1.png){width=300 height=200}
-![örnek2](/2.%20Hafta/photo/YetNot2.png){width=300 height=200}
-
+![örnek1](/2.%20Hafta/photo/YetNot1.png)![örnek2](/2.%20Hafta/photo/YetNot2.png)
+|![örnek1](/2.%20Hafta/photo/YetNot1.png)|![örnek2](/2.%20Hafta/photo/YetNot2.png)|
 
 **7. INPUT FONKSİYONU**
