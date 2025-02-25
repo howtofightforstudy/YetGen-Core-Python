@@ -80,5 +80,9 @@ toplama(+), çıkarma(-), çarpma(*), bölme(/), üs alma(**), mod alma(%), tam 
 (mesela "Merhaba Dünya" metninin 2. indexinde r vardır)
 |![örnek1](/2.%20Hafta/photo/YetNot1.png)|![örnek2](/2.%20Hafta/photo/YetNot2.png)|
 |------------------------------|------------------------------|
+<p align="center">
+  <img src="/2.%20Hafta/photo/YetNot1.png" width="200">
+  <img src="/2.%20Hafta/photo/YetNot2.png" width="200">
+</p>
 
 **7. INPUT FONKSİYONU**
