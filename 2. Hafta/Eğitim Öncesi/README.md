@@ -55,8 +55,9 @@ isim_soyisim = "Berkcan Gümüşışık"
 * Bir değişkenin integer, float, string ya da boolean olup olmadığını verir yani değişkenin veri tipini verir.
 
 **5. SAYI VERİ TÜRLERİ VE MATEMATİKSEL İŞLEMLER**
-**SAYI VERİ TÜRLERİ**
+**SAYI VERİ TÜRLERİ**<br>
 Sayısal ifadelerde tırnak işareti kullanmamıza gerek yok
+<br>
 **int**
 * Tam sayıları temsil eder. <br>
 (mesela 10,20,0,-45)
@@ -66,13 +67,16 @@ Sayısal ifadelerde tırnak işareti kullanmamıza gerek yok
 (mesela 10.0, 20.5, 0.0, -56.7)
 * Python iki rakamı birbirine böldüğü zaman gerçek sonucak ulaşmak için float değer döndürür.
 <br>
+
 **MATEMATİKSEL İŞLEMLER**
 **Aritmetik Operatörler**
 toplama(+), çıkarma(-), çarpma(*), bölme(/), üs alma(**), mod alma(%), tam bölme(//)
 
 
 **6. STRING, BOOLEAN VERİ TÜRLERİ**
-**string**
+<br>
+
+**String**
 * Metinsel ifadelerdir.
 * Metinsel ifadeler "", '', "" "" arasına yazılmalıdır.
 * Metinsel ifadelerde eğer tek tırnak ile başlandıysa tek tırnak ile devam edilmesi gerekmektedir.
@@ -82,5 +86,11 @@ toplama(+), çıkarma(-), çarpma(*), bölme(/), üs alma(**), mod alma(%), tam 
   <img src="/2.%20Hafta/photo/YetNot1.png" width="450">
   <img src="/2.%20Hafta/photo/YetNot2.png" width="450">
 </p>
+<br>
+
+**Boolean**
+* Sadece true ya da false değerini döndürür.
 
 **7. INPUT FONKSİYONU**
+* Kullanıcıdan veri girişi almamızı sağlar.
+* Input ile veri alırken string gibi bu yüzden input alırken sayı alacaksan int ya da float kullan.
