@@ -4,7 +4,9 @@
 * == iki değerin birbirine eşit olup olmadığını kontrol eder. Eşitse true, eşit değilse false değerini döndürür
 * != eşit değil mi?
 cevap eşit değilse true, eşitse false değerini döndürür
-* <= küçük eşittir, >= büyük eşittir. < küçüktür, > büyüktür
+* < küçüktür, > büyüktür
+* <= küçük eşittir, >= büyük eşittir
+<br>
 
 **2. MANTIKSAL OPERATÖRLER**
 
@@ -26,6 +28,7 @@ cevap eşit değilse true, eşitse false değerini döndürür
 
 **Not Operatörü**
 <br>true değerini false, false için true döndürür
+<br>
 
 **3. KARAR YAPILARI**
 
@@ -43,5 +46,8 @@ elif kosul2:
 else:
     # koşul ve koşul2 yanlışsa çalışacak kodlar
 ```
+
+
+<br>
 
 **4. DÖNGÜLER**
