@@ -4,8 +4,8 @@
 * == iki değerin birbirine eşit olup olmadığını kontrol eder. Eşitse true, eşit değilse false değerini döndürür
 * != eşit değil mi?
 cevap eşit değilse true, eşitse false değerini döndürür
-* > büyüktür, < küçüktür
-* >= büyük eşittir, <=küçük eşittir
+* < küçüktür, > büyüktür
+* <= küçük eşittir, >= büyük eşittir
 
 **2. MANTIKSAL OPERATÖRLER**
 
