@@ -80,6 +80,9 @@ Aranan veriyi ilk bulunduğunda durur, diğer verilerde aunı veri varsa getirme
 ```
 *06 key, Ankara value*
 * dict("") şeklinde de sözlük tanımlayabiliriz<br>
+<br>
+
 *Sözlüklerde integer, float, string ya da tuple veri tipleri kullanılırken listeler ve sözlükler kullanılamaz*
+
 
 **5. STRING METODLARI**
