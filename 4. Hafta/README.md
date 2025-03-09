@@ -35,12 +35,44 @@ Aranan veriyi ilk bulunduğunda durur, diğer verilerde aunı veri varsa getirme
 
  **LISTE TOPLAMA**
  iki listeyi birleştirir
- 
 
 **2. TUPLE (DEMET)**
+* Tuple listelere benzerdir
+* Tuple ile liste arasındaki en önemli fark tuple elemanlarının değiştirilemez, liste elemanlarının değiştirilebilir olmasıdır
+* Performanslı bir data sağlar
+* () içerisinde tanımlanabilir
+* İç içe tuple oluşturulabilir
+* Liste içerisinde tuple, tuple içerisinde liste tanımlamak mümkündür
+* Bir kere tanımlandıktan sonra değiştirilemezler yalnızca okunurlar
+* Tek elemansa tuple olduğunu belirtmek için bir virgül koyulmalıdır
 
 **3. SET**
+* Listelere benzer
+* En önemli özelliği indexsiz ve sırasız elemanlardan oluşmasıdır
+* Veri tekrarı söz konusu değildir, tüm elemanlar eşsizdir
+* {} içerisinde tanımlanır
+* Çok hızlı bir veri tipidir
+
+**Set Metodları**
+**add():** Sete eleman ekler
+**remove():** Setten eleman siler
+**clear():** Setin içerisindeki elemanları siler
+**pop():** Serin son elemanını siler
+**update():** Sete eleman ekler
+**union():** İki seti birleştirir
+**intersection():** İki setin kesişimini alır
+**difference():** İki setin farkını alır
 
 **4. DICTIONARY (SÖZLÜK)**
+* Sırasız veri tutar
+* Günlük hayatta olan sözcükler gibi düşünebiliriz
+* {} arasında tanımlanır
+* key: anahtar (bir bilgiye ulaşmak için kullanılır)
+* value: değer
+* key-value örneği:<br>
+{06:"Ankara"}<br>
+06 key, Ankara value
+* dict("") şeklinde de sözlük tanımlayabiliriz
+*Sözlüklerde integer, float, string ya da tuple veri tipleri kullanılırken listeler ve sözlükler kullanılamaz*
 
 **5. STRING METODLARI**
