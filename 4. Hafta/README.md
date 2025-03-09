@@ -7,7 +7,9 @@
 
 <br>
 <br>
-![bknz](/4.%20Hafta/photo/YetNot3.png)
+<p align="center">
+  <img src="/4. Hafta/photo/YetNot3.png" width="450">
+</p>
 
 **LISTE METODLARI**<br>
 **append():** Listenin sonuna eleman ekler <br>
