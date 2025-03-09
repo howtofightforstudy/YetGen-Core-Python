@@ -4,9 +4,10 @@
 * İç içe listeleme işlemi yapılabilir
 <br>
 * Listelerde soldan sağa index numaraları sıfırdan başlar, sağdan sola ise -1'den başlar<br>
-[bknz]:(./4.%20Hafta/photo/YetNot3.png)
+
 <br>
 <br>
+![bknz](/4.%20Hafta/photo/YetNot3.png)
 
 **LISTE METODLARI**<br>
 **append():** Listenin sonuna eleman ekler <br>
@@ -75,7 +76,7 @@ Aranan veriyi ilk bulunduğunda durur, diğer verilerde aunı veri varsa getirme
 ```
 {06:"Ankara"}
 ```
-06 key, Ankara value
+*06 key, Ankara value*
 * dict("") şeklinde de sözlük tanımlayabiliriz<br>
 *Sözlüklerde integer, float, string ya da tuple veri tipleri kullanılırken listeler ve sözlükler kullanılamaz*
 
