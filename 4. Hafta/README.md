@@ -37,9 +37,12 @@ Aranan veriyi ilk bulunduğunda durur, diğer verilerde aunı veri varsa getirme
 
  **sort():** Listeyi küçükten büyüğe sıralar
  <br>
+ <br>
 
  **LISTE TOPLAMA**<br>
  iki listeyi birleştirir
+
+<br>
 
 **2. TUPLE (DEMET)**
 * Tuple listelere benzerdir
@@ -50,6 +53,7 @@ Aranan veriyi ilk bulunduğunda durur, diğer verilerde aunı veri varsa getirme
 * Liste içerisinde tuple, tuple içerisinde liste tanımlamak mümkündür
 * Bir kere tanımlandıktan sonra değiştirilemezler yalnızca okunurlar
 * Tek elemansa tuple olduğunu belirtmek için bir virgül koyulmalıdır
+<br>
 
 **3. SET**
 * Listelere benzer
@@ -57,8 +61,9 @@ Aranan veriyi ilk bulunduğunda durur, diğer verilerde aunı veri varsa getirme
 * Veri tekrarı söz konusu değildir, tüm elemanlar eşsizdir
 * {} içerisinde tanımlanır
 * Çok hızlı bir veri tipidir
+<br>
 
-**Set Metodları**<br>
+**SET METODLARI**<br>
 **add():** Sete eleman ekler<br>
 **remove():** Setten eleman siler<br>
 **clear():** Setin içerisindeki elemanları siler<br>
@@ -87,7 +92,7 @@ Aranan veriyi ilk bulunduğunda durur, diğer verilerde aunı veri varsa getirme
 **5. STRING METODLARI**<br>
 <br>
 
-**String Parçalama**<br>
+**STRING PARÇALAMA**<br>
 ```
 x = "YetGen"
 print(x[2:5])
