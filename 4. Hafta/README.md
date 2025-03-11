@@ -84,5 +84,42 @@ Aranan veriyi ilk bulunduğunda durur, diğer verilerde aunı veri varsa getirme
 
 *Sözlüklerde integer, float, string ya da tuple veri tipleri kullanılırken listeler ve sözlükler kullanılamaz*
 
+**5. STRING METODLARI**<br>
+**String Parçalama**<br>
+```
+x = "YetGen"
+print(x[2:5])
+#ikinci elemandan başlar beşinci elemana kadar yazdırır, 5 dahil değildir
 
-**5. STRING METODLARI**
+print(x[2:])
+#ikinci elemandan itibaren yazdırır
+
+print(x[:2])
+#ikinci elemana kadar yazdırır, ikinci eleman dahil değil
+
+print(x[::-1])
+#tersten yazdırırız
+```
+<br>
+
+**String Metodları**<br>
+**len():** Stringin uzunluğunu verir
+**upper():** Stringin tüm harflerini büyük harfe çevirir
+**lower():** Stringin tüm harflerini küçük harfe çevirir
+**capitalize():** Stringin ilk harfini büyük harfe çevirir
+**swapcase():** Stringin tüm büyük harflerini küçük harfe, küçük harflerini büyük harfe çevirir
+**replace():** Stringin içerisindeki veriyi değiştirir
+**split():** Stringi parçalar
+**strip():** Stringin başındaki ve sorunundaki boşlukları siler
+**startwith():** Stringin belirtilen karakterle başlayıp başlamadığını kontrol eder
+```
+deger = "YetGen"
+print(deger.startswith("Y"))
+print(deger.startswith("y"))
+#küçük-büyük harf duyarlılığı vardır
+```
+**endswith():** Stringin belirtilen karakterle bitip bitmediğini kontrol eder
+**find():** Stringin tüm karakterlerinin alfabetik olup olmadığını kontrol eder. Eğer yoksa -1 döndürür.
+**index():** Stringin içerisindeki verinin indexini verir. Eğer veri yoksa ValueError hatası verir
+**isalpha():** Stringin tüm karakterlerinin alfabetik olup olmadığını kontrol eder
+**isdigit():** Stringin tüm karakterinin rakam olup olmadığını kontrol eder.
