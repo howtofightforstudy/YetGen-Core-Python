@@ -90,8 +90,6 @@ Aranan veriyi ilk bulunduğunda durur, diğer verilerde aunı veri varsa getirme
 *Sözlüklerde integer, float, string ya da tuple veri tipleri kullanılırken listeler ve sözlükler kullanılamaz*
 
 **5. STRING METODLARI**<br>
-<br>
-
 **STRING PARÇALAMA**<br>
 ```
 x = "YetGen"
