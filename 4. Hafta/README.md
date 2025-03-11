@@ -68,7 +68,7 @@ Aranan veriyi ilk bulunduğunda durur, diğer verilerde aunı veri varsa getirme
 **intersection():** İki setin kesişimini alır<br>
 **difference():** İki setin farkını alır<br>
 
-**4. DICTIONARY (SÖZLÜK)**
+**4. DICTIONARY (SÖZLÜK)**<br>
 * Sırasız veri tutar
 * Günlük hayatta olan sözcükler gibi düşünebiliriz
 * {} arasında tanımlanır
@@ -85,6 +85,8 @@ Aranan veriyi ilk bulunduğunda durur, diğer verilerde aunı veri varsa getirme
 *Sözlüklerde integer, float, string ya da tuple veri tipleri kullanılırken listeler ve sözlükler kullanılamaz*
 
 **5. STRING METODLARI**<br>
+<br>
+
 **String Parçalama**<br>
 ```
 x = "YetGen"
@@ -103,23 +105,23 @@ print(x[::-1])
 <br>
 
 **String Metodları**<br>
-**len():** Stringin uzunluğunu verir
-**upper():** Stringin tüm harflerini büyük harfe çevirir
-**lower():** Stringin tüm harflerini küçük harfe çevirir
-**capitalize():** Stringin ilk harfini büyük harfe çevirir
-**swapcase():** Stringin tüm büyük harflerini küçük harfe, küçük harflerini büyük harfe çevirir
-**replace():** Stringin içerisindeki veriyi değiştirir
-**split():** Stringi parçalar
-**strip():** Stringin başındaki ve sorunundaki boşlukları siler
-**startwith():** Stringin belirtilen karakterle başlayıp başlamadığını kontrol eder
+**len():** Stringin uzunluğunu verir<br>
+**upper():** Stringin tüm harflerini büyük harfe çevirir<br>
+**lower():** Stringin tüm harflerini küçük harfe çevirir<br>
+**capitalize():** Stringin ilk harfini büyük harfe çevirir<br>
+**swapcase():** Stringin tüm büyük harflerini küçük harfe, küçük harflerini büyük harfe çevirir<br>
+**replace():** Stringin içerisindeki veriyi değiştirir<br>
+**split():** Stringi parçalar<br>
+**strip():** Stringin başındaki ve sorunundaki boşlukları siler<br>
+**startwith():** Stringin belirtilen karakterle başlayıp başlamadığını kontrol eder<br>
 ```
 deger = "YetGen"
 print(deger.startswith("Y"))
 print(deger.startswith("y"))
 #küçük-büyük harf duyarlılığı vardır
 ```
-**endswith():** Stringin belirtilen karakterle bitip bitmediğini kontrol eder
-**find():** Stringin tüm karakterlerinin alfabetik olup olmadığını kontrol eder. Eğer yoksa -1 döndürür.
-**index():** Stringin içerisindeki verinin indexini verir. Eğer veri yoksa ValueError hatası verir
-**isalpha():** Stringin tüm karakterlerinin alfabetik olup olmadığını kontrol eder
-**isdigit():** Stringin tüm karakterinin rakam olup olmadığını kontrol eder.
+**endswith():** Stringin belirtilen karakterle bitip bitmediğini kontrol eder<br>
+**find():** Stringin tüm karakterlerinin alfabetik olup olmadığını kontrol eder. Eğer yoksa -1 döndürür.<br>
+**index():** Stringin içerisindeki verinin indexini verir. Eğer veri yoksa ValueError hatası verir<br>
+**isalpha():** Stringin tüm karakterlerinin alfabetik olup olmadığını kontrol eder<br>
+**isdigit():** Stringin tüm karakterinin rakam olup olmadığını kontrol eder.<br>
