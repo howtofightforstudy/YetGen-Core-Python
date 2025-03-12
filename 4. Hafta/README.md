@@ -111,10 +111,10 @@ print(x[::-1])
 **len():** Stringin uzunluğunu verir<br>
 **upper():** Stringin tüm harflerini büyük harfe çevirir<br>
 **lower():** Stringin tüm harflerini küçük harfe çevirir<br>
-**capitalize():** Stringin ilk harfini büyük harfe çevirir<br>
+**capitalize():** Stringin ilk harfini büyük, diğer harflerini küçük harfe çevirir<br>
 **swapcase():** Stringin tüm büyük harflerini küçük harfe, küçük harflerini büyük harfe çevirir<br>
 **replace():** Stringin içerisindeki veriyi değiştirir<br>
-**split():** Stringi parçalar<br>
+**split():** Stringi parçalar<br>S
 **strip():** Stringin başındaki ve sorunundaki boşlukları siler<br>
 **startwith():** Stringin belirtilen karakterle başlayıp başlamadığını kontrol eder<br>
 ```
@@ -124,7 +124,7 @@ print(deger.startswith("y"))
 #küçük-büyük harf duyarlılığı vardır
 ```
 **endswith():** Stringin belirtilen karakterle bitip bitmediğini kontrol eder<br>
-**find():** Stringin tüm karakterlerinin alfabetik olup olmadığını kontrol eder. Eğer yoksa -1 döndürür.<br>
+**find():** İstenilen stringin değerini bulur ve indexini döndürür. Eğer yoksa -1 döndürür.<br>
 **index():** Stringin içerisindeki verinin indexini verir. Eğer veri yoksa ValueError hatası verir<br>
 **isalpha():** Stringin tüm karakterlerinin alfabetik olup olmadığını kontrol eder<br>
 **isdigit():** Stringin tüm karakterinin rakam olup olmadığını kontrol eder.<br>
