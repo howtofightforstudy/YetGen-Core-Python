@@ -23,6 +23,7 @@ Programlamanın temeli: DRY(Don't Repeat Yourself - Kendini tekrar etme)
     fonksiyon_adi(argüman1,argüman2...)
 """
 <br>
+<br>
 
 **3. ARGUMAN VE RETURN DEYİMİ**<br>
 <br>
