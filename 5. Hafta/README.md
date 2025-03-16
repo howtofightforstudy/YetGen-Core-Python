@@ -22,8 +22,11 @@ Programlamanın temeli: DRY(Don't Repeat Yourself - Kendini tekrar etme)
 """
     fonksiyon_adi(argüman1,argüman2...)
 """
+<br>
 
 **3. ARGUMAN VE RETURN DEYİMİ**<br>
+<br>
+
 **Argüman (Parametre)**<br>
 * İşlev çağırılırken parantez içindeki işlevlere iletilen değerlerdir (string,number vb)<br>
 (örnek: islem_adi(argüman))
@@ -42,6 +45,8 @@ Programlamanın temeli: DRY(Don't Repeat Yourself - Kendini tekrar etme)
 <br>
 
 **4. ARGS, KWARGS VE PASST DEYİMİ**<br>
+<br>
+
 ***args**<br>
 * Sınırsız sayıda parametreli fonksiyon oluşturmak için parametremizin önüne tek yıldız (*) koyabiliriz
 * isimsiz argümanlardır
