@@ -50,9 +50,28 @@ Programlamanın temeli: DRY(Don't Repeat Yourself - Kendini tekrar etme)
 <br>
 
 ****kwargs**<br>
-* Çift yıldızlı (**)
+* Çift yıldızlı parametrelerin tek yıldızlı parametrelerden en önemli farkı, fonksiyonu çağırılırken anahtar-değer ilişkisiyle çağırabilmemizdir
+* İsimli argümanlardır
+<br>
 
+**Pass Deyimi**<br>
+* Python programlamasında pass ifadesi null değer atama için kullanılır. Python'daki bir açıklama ve geniş ifadesi arasındaki fark, yorumlayıcı bir yorumu tamamen yok sayarken, geçişin göz ardı edilmemesidir
+<br>
 
-**5. GLOBAL VE YEREL DEĞİŞKENLER**
+**5. GLOBAL VE YEREL DEĞİŞKENLER**<br>
+* Global değişken fonksiyonlarımızın dışında tanımladığımız değişkenlerdir
+* Yerel değişkenler ise fonksiyon içinde kullandığımız değişkenlerdir
+* Fonksiyonun dışında tanımladığımız fonksiyonların içinde kullanılırken, fonksiyonların içinde tanımladığımız değişkenler fonksiyonun dışında kullanılmaz
+"""
+#global değişken
+  def goster():
+      #yerel değişken
+"""
+* Bir fonksiyon kendi içerisinde çağırılırsa sonsuz döngüye girer
 
-**6.LAMBDA**
+**6.LAMBDA**<br>
+* Pythonda isimsiz olarak tanımladığımız fonksiyonlara lambda fonksiyonlar denir
+* Tek satırda yazılırlar
+"""
+  fonksiyonAdi = lambda parametreler : yapilacakIslem
+"""
