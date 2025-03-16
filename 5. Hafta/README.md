@@ -10,18 +10,18 @@ Programlamanın temeli: DRY(Don't Repeat Yourself - Kendini tekrar etme)
 * Fonksiyonların içindeki değişkenler yereldir yani bir fonksiyonun içinde bir değişken tanımladığınızda o değişkeni fonksiyonun dışına çağıramayız çünkü o değişken o fonksiyona özeldir ve globalde kullanılamaz
 * Ne zaman bir fonksiyon çağırılırsa, fonksiyonu yazdıktan sonra yapmalısınız
 * Fonksiyon tanımlamanın yapısı şu şekildedir: <br>
-"""
+```
     def fonksiyon_adi(parametre1,parametre2... (opsiyonel)):
     #fonksiyon bloğu
     Yapılacak işlemler
     #dönüş değeri - opsiyonel
-"""
+```
 
 <br>
 * Tanımlanan bir fonksiyonun kullanılmasına programlama dillerinde **Fonksiyon Çağrısı** denmektedir<br>
-"""
+```
     fonksiyon_adi(argüman1,argüman2...)
-"""
+```
 <br>
 <br>
 
@@ -30,10 +30,10 @@ Programlamanın temeli: DRY(Don't Repeat Yourself - Kendini tekrar etme)
 * İşlev çağırılırken parantez içindeki işlevlere iletilen değerlerdir (string,number vb)<br>
 (örnek: islem_adi(argüman))
 * Eğer fonksiyon çağırılırken bir argüman yoksa bu argümanın değeri none olur bu nedenle fonksiyonun içinde ifade edilecek bir değer yoksa belirlenen değer kullanılmalıdır
-"""
+```
     def helloWordl(name = "ziyaretçi"):
       print("Merhaba", name)
-"""
+```
 * Birden fazla parametre olabilir, her biri virgülle ayrılır
 <br>
 
@@ -62,16 +62,17 @@ Programlamanın temeli: DRY(Don't Repeat Yourself - Kendini tekrar etme)
 * Global değişken fonksiyonlarımızın dışında tanımladığımız değişkenlerdir
 * Yerel değişkenler ise fonksiyon içinde kullandığımız değişkenlerdir
 * Fonksiyonun dışında tanımladığımız fonksiyonların içinde kullanılırken, fonksiyonların içinde tanımladığımız değişkenler fonksiyonun dışında kullanılmaz
-"""
+```
 #global değişken
   def goster():
       #yerel değişken
-"""
+```
 * Bir fonksiyon kendi içerisinde çağırılırsa sonsuz döngüye girer
+<br>
 
 **6.LAMBDA**<br>
 * Pythonda isimsiz olarak tanımladığımız fonksiyonlara lambda fonksiyonlar denir
 * Tek satırda yazılırlar
-"""
+```
   fonksiyonAdi = lambda parametreler : yapilacakIslem
-"""
+```
