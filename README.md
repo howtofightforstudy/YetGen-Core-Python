@@ -66,12 +66,4 @@ Bu repo aşağıdaki konulara dair ders notları, alıştırmalar ve projeler i�
 
 ---
 
-## 💡 Nasıl Katkı Sağlayabilirsin?  
-Bu repository’ye katkıda bulunmak istersen:  
-1. **Fork** butonuna basarak kendi GitHub hesabına kopyalayabilirsin.  
-2. Değişikliklerini yaptıktan sonra bir **Pull Request (PR)** açabilirsin.  
-3. Katkıların için teşekkür ederim! 😊  
-
----
-
 🚀 **YetGen Core Python#4 öğrenme sürecimi buradan takip edebilir, destek olmak isterseniz ⭐ (star) butonuna basabilirsiniz!** 🚀  
