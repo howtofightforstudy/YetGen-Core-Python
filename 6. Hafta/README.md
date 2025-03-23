@@ -74,9 +74,31 @@ list(enumerate(liste))
 
 ### all() Fonksiyonu<br>
 all() fonksiyonu bütün değerler true ise true, en az bir değer false ise false sonuç döndürür
+```
+liste1 = [True,True,False]
+all(liste1)
+#sonuç false
+
+liste2 = [True,True,True]
+all(liste2)
+#sonuç true
+```
 
 ### any() Fonksiyonu<br>
 any() fonksiyonu bütün değerler False ise False, en az bir değer True ise True sonuç döndürür
+```
+liste1 = [True,True,False]
+any(liste1)
+#sonuç true
+
+liste2 = [True,False,False]
+any(liste2)
+#sonuç true
+
+liste3 = [False,False,False]
+any(liste3)
+#sonuç false
+```
 
 **4. HATA YÖNETİMİ**
 
