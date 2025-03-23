@@ -20,7 +20,7 @@ help(math)
 ```
 bu şekilde fonksiyonların ne işe yaradığını görebiliyoruz
 
-## KENDİ MODÜLÜMÜZÜ YAZALIM<br>
+### KENDİ MODÜLÜMÜZÜ YAZALIM<br>
 ```
 from modül_adı import * 
 ```
@@ -41,8 +41,8 @@ factorial(5)
 ```
 
 **3. GÖMÜLÜ FONKSİYONLAR**<br>
+#### Map Fonksiyonu <br>
+doewjof
 
+**4. HATA YÖNETİMİ**
 
-**3. HATA YÖNETİMİ**
-
-**4. GÖMÜLÜ FONKSİYONLAR**
