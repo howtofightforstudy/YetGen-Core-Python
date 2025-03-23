@@ -120,3 +120,28 @@ Hata oluşursa **try** bloğunun geri kalanındaki işlemler çalışmayacak
 **except** Hata1: Hata1 oluştuğunda burası çalışacak<br>
 
 **except** Hata2: Hata2 oluştuğunda burası çalışacak<br>
+
+```
+try:
+    a = int(input("Sayı 1: "))
+    b = int(input("Sayı 2: "))
+    print(a/b)
+except ValueError:
+    #bir fonksiyonun veya işlemin beklenmeyen bir değer almasıyla oluşur
+    print("Inputları foğru giriniz")
+except ZeroDivisionError:
+    #bir sayıyı sıfıra bölmeye çalıştığımızda oluşur
+    print("Sayı 0'a bölünmez")
+```
+
+### try-except-else<br>
+try bloğunun içinde hata oluşursa except bloğuna girer, hata oluşmazsa else bloğuna girer
+
+```
+try: 
+    hata çıkarabilecek kodlar buraya yazılır
+except Hata:
+    hata oluştuğunda burası çalışacak
+else:
+    hata oluşmazsa burası çalışacak
+```
