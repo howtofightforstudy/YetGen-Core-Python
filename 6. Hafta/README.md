@@ -110,28 +110,15 @@ print "Merhaba"
 
 ### Try, Except Blokları<br>
 *try, except bloklarının yapısı şu şekildedir:*
-<br>
-
-**try:** Hata çıkarabilecek kodlar buraya yazılır<br>
-Eğer hata çıkarsa program uygun olan **except** bloğuna girecek<br>
-Hata oluşursa **try** bloğunun geri kalanındaki işlemler çalışmayacak
-<br>
-
-**except** Hata1: Hata1 oluştuğunda burası çalışacak<br>
-
-**except** Hata2: Hata2 oluştuğunda burası çalışacak<br>
-
 ```
-try:
-    a = int(input("Sayı 1: "))
-    b = int(input("Sayı 2: "))
-    print(a/b)
-except ValueError:
-    #bir fonksiyonun veya işlemin beklenmeyen bir değer almasıyla oluşur
-    print("Inputları foğru giriniz")
-except ZeroDivisionError:
-    #bir sayıyı sıfıra bölmeye çalıştığımızda oluşur
-    print("Sayı 0'a bölünmez")
+try: 
+    Hata çıkarabilecek kodlar buraya yazılır
+    Eğer hata çıkarsa program uygun olan **except** bloğuna girecek
+    Hata oluşursa **try** bloğunun geri kalanındaki işlemler çalışmayacak
+except Hata1: 
+    Hata1 oluştuğunda burası çalışacak
+except Hata2: 
+    Hata2 oluştuğunda burası çalışacak
 ```
 
 ### try-except-else<br>
