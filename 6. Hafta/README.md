@@ -1,5 +1,5 @@
 **1. MODÜLLER**<br>
-## MODÜL MANTIĞI<br>
+### MODÜL MANTIĞI<br>
 Bir Python modülünü programımıza dahil ederek bu modüller içinde yazılan fonksiyonlardan ve sınıflardan kullanabilir, programlarımızı daha efektif bir şekilde yazabiliriz. Eğer modül diye bir kavram olmasaydı programlarımızdaki her bir fonksiyonu ve sınıfı kendimiz yazmak zorunda kalacaktık
 <br>
 Python modülü, içinde fonksiyonlar, sınıflar ve değişkenler barındıran bir Python dosyasıdır. Başka Python dosyalarında bu modülü import ederek tekrar kullanabilirsin.
