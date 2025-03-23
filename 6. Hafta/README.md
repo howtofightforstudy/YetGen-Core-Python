@@ -110,7 +110,7 @@ print "Merhaba"
 
 ### Try, Except Blokları<br>
 try, except bloklarının yapısı şu şekildedir:
----
+---<br>
 
 **try:** Hata çıkarabilecek kodlar buraya yazılır<br>
 Eğer hata çıkarsa program uygun olan **except** bloğuna girecek<br>
