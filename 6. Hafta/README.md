@@ -41,17 +41,42 @@ factorial(5)
 ```
 
 **3. GÖMÜLÜ FONKSİYONLAR**<br>
-### Map Fonksiyonu <br>
+### map() Fonksiyonu <br>
 Parametre olarak aldığı fonksiyona, paramtere olarak aldığı listenin her elemanını sırasıyla parametre olarak gönderir
 ```
 map(fonksiyon,iterasyon yapılabilecek veritipi(liste,demet,vb)...)
 ```
 
-### Filter Fonksiyonu<br>
+### filter() Fonksiyonu<br>
 İsminden de anlaşılacağı gibi filtreleme işlemi yapar
 ```
 filter(fonksiyon,iterasyon yapılabilen bir veritipi(liste vb))
 ```
+
+### zip() Fonksiyonu<br>
+iki dizisel elemanın öğelerini birbiriyle eşleştirerek bir zip objesi oluşturur
+```
+liste1 = [1,2,3,4]
+liste2 = [5,6,7,8]
+liste3 = ["Python","Java","C#","Javascript"]
+list(zip(liste1,liste2,liste3))
+```
+her dizinin i. indeksini ayrı toplar
+çıktısı: [(1, 5, 'Python'), (2, 6, 'Java'), (3, 7, 'C#'), (4, 8, 'Javascript')]
+
+### enumerate() Fonksiyonu<br>
+ingilizcede enumerate kelimesi 'numaralandırmak' anlamına gelir. enumerate() fonksiyonunun görevi de kelimenin bu anlamıyla aynıdır yani bu fonksiyonu kullanarak nesneleri numaralandırabiliriz
+```
+liste = ["Elma","Armut","Muz","Kiraz"]
+list(enumerate(liste))
+```
+[(0, 'Elma'), (1, 'Armut'), (2, 'Muz'), (3, 'Kiraz')]
+
+### all() Fonksiyonu<br>
+all() fonksiyonu bütün değerler true ise true, en az bir değer false ise false sonuç döndürür
+
+### any() Fonksiyonu<br>
+any() fonksiyonu bütün değerler False ise False, en az bir değer True ise True sonuç döndürür
 
 **4. HATA YÖNETİMİ**
 
