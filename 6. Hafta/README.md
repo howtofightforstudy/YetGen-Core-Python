@@ -46,7 +46,6 @@ Parametre olarak aldığı fonksiyona, paramtere olarak aldığı listenin her e
 ```
 map(fonksiyon,iterasyon yapılabilecek veritipi(liste,demet,vb)...)
 ```
-<br>
 
 ### Filter Fonksiyonu<br>
 İsminden de anlaşılacağı gibi filtreleme işlemi yapar
