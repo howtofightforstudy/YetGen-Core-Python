@@ -109,7 +109,7 @@ print "Merhaba"
 ```
 
 ### Try, Except Blokları<br>
-*try, except bloklarının yapısı şu şekildedir:*
+try, except bloklarının yapısı şu şekildedir:
 ```
 try: 
     Hata çıkarabilecek kodlar buraya yazılır
@@ -131,4 +131,21 @@ except Hata:
     hata oluştuğunda burası çalışacak
 else:
     hata oluşmazsa burası çalışacak
+```
+
+### try-except-finally<br>
+hata olsa da olmasa da finally kısmı çalışır
+```
+try: 
+    hata çıkarabilecek kodlar buraya yazılır
+except Hata:
+    hata oluştuğunda burası çalışacak
+finally:
+    kesin olarak her zaman çalışacak
+```
+
+### Hata Fırlattırma<br>
+Hataları fırlatmak için raise kullanılır
+```
+raise HataAdı(opsiyonel hata mesajı)
 ```
