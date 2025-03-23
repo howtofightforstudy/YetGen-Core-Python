@@ -18,7 +18,7 @@ ile modülün içinde hangi fonksiyonların olduğunu görebiliyoruz
 ```
 help(math)
 ```
-bu şekilde
+bu şekilde fonksiyonların ne işe yaradığını görebiliyoruz
 
 ## KENDİ MODÜLÜMÜZÜ YAZALIM<br>
 ```
