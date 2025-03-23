@@ -41,7 +41,7 @@ factorial(5)
 ```
 
 **3. GÖMÜLÜ FONKSİYONLAR**<br>
-* Map Fonksiyonu <br>
+### Map Fonksiyonu <br>
 Parametre olarak aldığı fonksiyona, paramtere olarak aldığı listenin her elemanını sırasıyla parametre olarak gönderir
 ```
 map(fonksiyon,iterasyon yapılabilecek veritipi(liste,demet,vb)...)
@@ -54,7 +54,8 @@ powers = list(map(power,numbers))
 print(powers)
 ```
 <br>
-* Filter Fonksiyonu <br>
+
+### Filter Fonksiyonu<br>
 İsminden de anlaşılacağı gibi filtreleme işlemi yapar
 ```
 filter(fonksiyon,iterasyon yapılabilen bir veritipi(liste vb))
