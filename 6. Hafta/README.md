@@ -95,5 +95,20 @@ liste3 = [False,False,False]    #sonuç false
 any(liste3)
 ```
 
-**4. HATA YÖNETİMİ**
+**4. HATA YÖNETİMİ**<br>
+python programlarında bazen bir değişkenin tanımlanmadan kullanılmaya çalıştırılması, bazen de yapılamayacak bir aritmetik işlemin yapılması python'da hatalara yol açar ancak bu istisnai durumlarda, halatın türüne göre programlarımızı daha güvenli bir şekilde yazabiliriz. Yani hata çıkarabilecek kodlarımızı öngörerek bu hataları programlarımızda yakalayabiliriz
+```
+print(a)
+#NameError: name 'a' is not defined
 
+print(2/0)
+#ZeroDivisionError: division by zero
+
+print "Merhaba"
+#SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+```
+
+### Try, Except Blokları<br>
+try, except bloklarının yapısı şu şekildedir:
+**try:** Hata çıkarabilecek kodlar buraya yazılır
+         Eğer hata çıkarsa program uygun olan **except** bloğuna girecek
