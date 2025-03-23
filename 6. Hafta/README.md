@@ -113,8 +113,8 @@ try, except bloklarının yapısı şu şekildedir:<br>
 **try:** Hata çıkarabilecek kodlar buraya yazılır<br>
 Eğer hata çıkarsa program uygun olan **except** bloğuna girecek<br>
 Hata oluşursa **try** bloğunun geri kalanındaki işlemler çalışmayacak
-<br><br>
+<br>
 
-**except** Hata1: Hata1 oluştuğunda burası çalışacak<br><br>
+**except** Hata1: Hata1 oluştuğunda burası çalışacak<br>
 
 **except** Hata2: Hata2 oluştuğunda burası çalışacak<br>
