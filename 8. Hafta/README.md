@@ -135,3 +135,38 @@ ESKİŞEHİR
 AFYONKARAHİSAR
 İSTANBUL
 ```
+
+**NESNE YÖNELİMLİ PROGRAMLAMA (OOP)**<br>
+DRY (Don't Repeat Yourself) sağlar. Kod tekrarını önlemek, hem okunabilirliği arttırır hem de rüski azaltır<br>
+Class, nesne, constructor ve self parametresi, nesne yönelimli programlamanın (OOP) temel kavramlarıdır.<br>
+
+**1. CLASS**<br>
+Sınıflar veya Classlar objelerimizi oluştururken objelerin özelliklerin ive metodlaırnı tanımladığımız bir yapıdır<br>
+Sınıf oluşturma:
+```
+class Araba():
+    #sınıf özellikleri(attribute)
+    model = "Renault Megane"
+    renk = "Gümüş"
+    beygirGucu = 110
+    silindir = 4
+```
+
+<br>
+
+**OBJE OLUŞTURMA**<br>
+Obje oluşturmak, bir sınıftan (class) örnek üretmektir bu sayede o sınıfın sahip olduğu özellikleri ve davranışları taşıyan bir nesne elde ederiz.
+```
+obje_ismi = Sınıf_ismi(parametreler(opsiyonel))
+```
+
+**ÖZELLİKLERE ERİŞME**<br>
+Bir obje oluşturduktan sonra o objeye ait özelliklere nokta (.) notasyonu ile erişebiliriz. Özellikler, sınıf içinde self ile tanımlanmış değişkenlerdir.
+```
+obje_ismi.ozellik_ismi
+```
+<p align="center">
+  <img src="/8. Hafta/yetgennot.png" width="450">
+</p>
+<br>
+
