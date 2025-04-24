@@ -3,9 +3,9 @@
 ```
 open(dosyaIsmi, dosyaModu)
 ```
-*dosyaModu: Dosyanın hangi modda açacağını belirtir*<br>
-*r : Okuma modunda açmayı sağlar, belirtilen konumda dosya olması gerekir*<br>
-*close(): Dosyayı kapatır*<br>
+*dosyaModu*: Dosyanın hangi modda açacağını belirtir<br>
+*r*: Okuma modunda açmayı sağlar, belirtilen konumda dosya olması gerekir<br>
+*close()*: Dosyayı kapatır<br>
 
 **read() Fonksiyonu**<br>
 read() fonksiyonu eğer içine hiçbir değer vermezsek bütün dosyamızı okuyacaktır<br>
@@ -22,6 +22,7 @@ file.close()
 file = open("bilgiler.txt","r",encoding="utf-8")
 icerik = file.read()
 print("1.okuma dosya içeriği\n", icerik)
+
 #!burada ikinci okuma için imleci başa aldık
 file.seek(0) 
 icerik2 = file.read()
