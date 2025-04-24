@@ -9,7 +9,7 @@ open(dosyaIsmi, dosyaModu)
 
 **read() Fonksiyonu**<br>
 read() fonksiyonu eğer içine hiçbir değer vermezsek bütün dosyamızı okuyacaktır<br>
-* her çalıştırıldığında bir satırı okuyabilir eğer fazladan yazdırmaya çalışırsak boş döner
+* readline() ile her çalıştırıldığında bir satırı okuyabilir eğer fazladan yazdırmaya çalışırsak boş döner
 ```
 file = open("bilgiler.txt","r",encoding="utf-8")
 print(file.readline())
@@ -29,3 +29,34 @@ icerik2 = file.read()
 print("2.okuma dosya içeriği\n", icerik2)
 file.close()
 ```
+* readlines() fonksiyonu dosyanın bütün satırlarını bir liste şeklinde döner
+```
+file = open("bilgiler.txt","r",encoding="utf-8")
+print(file.readlines())
+```
+**Dosya Yazma**<br>
+*w*: Yazma moduç Dosya konumda oluşturur, dosya konumda varsa ekleme işlemi yapar.<br>
+```
+file = open("bilgiler.txt","w",encoding="utf-8")
+file.write("İZMİR\n")
+file.close()
+```
+*a*: append (ekleme) modudur. Dosya konumda varsa oluşturur, dosya konumda varsa ekleme işlemi yapar<br>
+```
+file = open("bilgiler.txt","a",encoding="utf-8")
+file.write("İSTANBUL\n")
+file.close()
+```
+*r+*: Hem okuma hem yazma modudur. Dosya konumda yoksa hata verir<br>
+```
+file = open("bilgiler.txt","r+",encoding="utf-8")
+file.write("ANKARA\n")
+file.read()
+file.close()
+```
+İZMİR'i silip ANKARA yazdı
+**Neden böyle oluyor?**
+Çünkü r+ modunda dosya başından itibaren yazmaya başlar. file.write("ANKARA\n") dediğinde:<br>
+* ANKARA\n ifadesi 7 karakter uzunluğundadır.Bu yüzden dosyanın başındaki ilk 7 karakterin üzerine yazar.
+* "İZMİR\n" toplam 6 karakterdi, yani ANKARA onu ezip geçer.<br>
+Bu durum "overwrite" (üzerine yazma) olarak adlandırılır.
