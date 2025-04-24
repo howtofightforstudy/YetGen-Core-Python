@@ -63,6 +63,7 @@ file.write("ANKARA\n") dediğinde:<br>
 Bu durum "overwrite" (üzerine yazma) olarak adlandırılır.<br>
 
 **DOSYALARI OTOMATİK KAPATMA**<br>
+with yapısı kullanılarak dosya işlemleri tamamlandığında dosyanın otomatik olarak kapanması sağlanır.<br>
 ```
 with open(dosya_adi, dosya_kipi) as file:
     Dosya işlemleri
