@@ -54,9 +54,10 @@ file.write("ANKARA\n")
 file.read()
 file.close()
 ```
-İZMİR'i silip ANKARA yazdı
-**Neden böyle oluyor?**
-Çünkü r+ modunda dosya başından itibaren yazmaya başlar. file.write("ANKARA\n") dediğinde:<br>
+İZMİR'i silip ANKARA yazdı<br>
+**Neden böyle oluyor?**<br>
+Çünkü r+ modunda dosya başından itibaren yazmaya başlar.<br> 
+file.write("ANKARA\n") dediğinde:<br>
 * ANKARA\n ifadesi 7 karakter uzunluğundadır.Bu yüzden dosyanın başındaki ilk 7 karakterin üzerine yazar.
 * "İZMİR\n" toplam 6 karakterdi, yani ANKARA onu ezip geçer.<br>
 Bu durum "overwrite" (üzerine yazma) olarak adlandırılır.
