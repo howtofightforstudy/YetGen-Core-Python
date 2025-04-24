@@ -2,5 +2,5 @@
 * Dosya açmak ve oluşturmak için open() kullanılır
 ```
 open(dosyaIsmi, dosyaModu)
-_dosyaModu: Dosyanın hangi modda açacağını belirtir_
+dosyaModu: Dosyanın hangi modda açacağını belirtir
 ```
