@@ -76,3 +76,61 @@ with open("bilgiler.txt","r",encoding="utf-8") as file:
     file.seek(20) #20.bayta gitti
     print(file.tell()) #file dosyasının hangi baytta olduğunu yazdırdı
 ```
+
+**DOSYA SONUNDA DĞEİŞİKLİK YAPMAK**<br>
+Belirli bir konuma giderek dosya içeriğinin ortasında ya da sonunda değişiklik yapmayı sağlar.<br>
+```
+with open("bilgiler.txt","r+",encoding="utf-8") as file:
+    file.seek(10)
+    file.write("deneme")
+
+with open("bilgiler.txt","r+",encoding="utf-8") as file:
+    print(file.read())
+
+#çıktısı:
+ANKARA
+ADdenemeDIYAMAN
+AFYONKARAHİSAR
+İSTANBUL
+```
+
+**DOSYANIN BAŞINDA DEĞİŞİKLİK YAPMAK**<br>
+Dosya içeriği okunarak başına yeni veriler eklemek için kullanılır.<br>
+```
+with open("bilgiler.txt","r+",encoding="utf-8") as file:
+    icerik = file.read()
+    icerik = "Zonguldak\n" + icerik
+    file.seek(0)
+    file.write(icerik)
+
+with open("bilgiler.txt","r+",encoding="utf-8") as file:
+    print(file.read())
+
+#çıktısı:
+Zonguldak
+ANKARA
+ADdenemeDIYAMAN
+AFYONKARAHİSAR
+İSTANBUL
+```
+
+**DOSYA ORTASINDA DEĞİŞİKLİK YAPMAK**<br>
+Dosya satır satır okunarak istenilen satıra yeni bir satır eklemek için kullanılır.<br>
+```
+with open("bilgiler.txt","r+",encoding="utf-8") as file:
+    liste = file.readlines()
+    liste.insert(3,"ESKİŞEHİR\n")
+    file.seek(0)
+    file.writelines(liste)
+
+with open("bilgiler.txt","r+",encoding="utf-8") as file:
+    print(file.read())
+
+#çıktısı:
+Zonguldak
+ANKARA
+ADdenemeDIYAMAN
+ESKİŞEHİR
+AFYONKARAHİSAR
+İSTANBUL
+```
