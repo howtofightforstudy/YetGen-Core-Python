@@ -1,0 +1,4 @@
+
+Ürün: Üzüm - Fiyat: 25 TL
+Ürün: Portakal - Fiyat: 12 TL
+Ürün: Karadut - Fiyat: 24 TL

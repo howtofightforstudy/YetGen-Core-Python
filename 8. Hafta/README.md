@@ -78,7 +78,7 @@ with open("bilgiler.txt","r",encoding="utf-8") as file:
     print(file.tell()) #file dosyasının hangi baytta olduğunu yazdırdı
 ```
 
-**DOSYA SONUNDA DĞEİŞİKLİK YAPMAK**<br>
+**DOSYA SONUNDA DEĞİŞİKLİK YAPMAK**<br>
 Belirli bir konuma giderek dosya içeriğinin ortasında ya da sonunda değişiklik yapmayı sağlar.<br>
 ```
 with open("bilgiler.txt","r+",encoding="utf-8") as file:
@@ -170,3 +170,46 @@ obje_ismi.ozellik_ismi
 </p>
 <br>
 
+```
+class Araba():
+    #sınıf özellikleri(attribute)
+    model = "Renault Megane"
+    renk = "Gümüş"
+    beygirGucu = 110
+    silindir = 4
+
+#bu şekilde erişim sğalanabilir
+araba1 = Araba()
+print(araba1.model)
+print(araba1.renk)
+print(araba1.beygirGucu)
+print(araba1.silindir)
+
+#bu şekilde de erişim sağlanabiliriz
+class Hayvan():
+    isim = "Kuş"
+    print(isim)
+```
+
+**INIT() FONKSİYONU**<br>
+Pythonda yapıcı(constructor) fonksiyon olarak tanımlanmaktadır. Bu metod objelerimiz oluşturulurken otomatik olarak ilk çağrılan fonksiyondur. Bu metodu özel olarak tanımlayarak objelerimizi farklı değerlerle oluşturabiliriz
+```
+class Araba():
+    def __init__(self):
+        print("init fonksiyonu çalıştı")
+    
+araba = Araba()
+```
+Self anahtar kelimesi objeyi oluşturduğumuz zaman o objeyi gösteren bir referanstır ve metodlarımızda en başta bulunması gereken bir parametredir<br>
+Self anahtar kelimesi sayesinde, her objeye ait özellikleri tek tek tanımlamak yerine, o objeyi temsil eden referansı kullanarak sınıf içindeki tüm özelliklere ve metodlara erişim sağlarız.
+```
+class Araba():
+    def __init__(self,model,renk,beygirGücü,silindir):
+        self.model = model
+        self.renk = renk
+        self.beygirGücü = beygirGücü
+        self.silindir = silindir
+
+araba2 = Araba("Peugeot 301","Beyaz",90,4)
+print(araba2.model)
+```
