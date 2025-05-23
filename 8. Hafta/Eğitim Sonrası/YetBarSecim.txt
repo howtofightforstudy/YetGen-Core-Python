@@ -1,1 +1,10 @@
-[13.05.2025] Vanilyalı Smoothie - 60 TL
+23.05.2025,Vanilyalı Smoothie,60
+23.05.2025,Çilekli Smoothie,65
+23.05.2025,Muzlu Smoothie,65
+23.05.2025,Çilekli Smoothie,65
+23.05.2025,Muzlu Smoothie,65
+23.05.2025,Vanilyalı Smoothie,60
+23.05.2025,Muzlu Smoothie,65
+23.05.2025,Vanilyalı Smoothie,60
+23.05.2025,Çikolatalı Smoothie,75
+23.05.2025,Çilekli Smoothie,65
