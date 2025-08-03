@@ -178,7 +178,7 @@ class Araba():
     beygirGucu = 110
     silindir = 4
 
-#bu şekilde erişim sğalanabilir
+#bu şekilde erişim sağlanabilir
 araba1 = Araba()
 print(araba1.model)
 print(araba1.renk)
