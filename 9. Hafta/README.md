@@ -31,7 +31,7 @@ class Yazilimci:
 
     def maas_yukselt(self, zam):
         print("Zam yapılıyor")
-        self.maas += zam 
+        self.maas +=zam 
 
 yazilimci = Yazilimci("Berkcan", "Işık", "12345", 10000, ["Python", "JavaScript", "Flutter"])
 yazilimci.bilgiler_goster()
