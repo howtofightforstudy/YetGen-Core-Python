@@ -48,5 +48,7 @@ yazilimci.bilgiler_goster()
 - Mesela öğrenci ve öğretmeni düşündüğümüz zaman öğrencinin adı soyadı, adresi, cinsiyeti ve numarası vardır. Öğretmeninse ad, soyad, adres, cinsiyet ve branşı vardır. Bunun yerine kisi sınıfı oluşturup ad, soyad, adres ve cinsiyet tutulur.<br>
 - Öğrenci ve öğretmen classında ise öğrenciyeveya öğretmene özgü özellikler ve metotlar tutulur.<br>
 - super() en genel anlamıyla miras aldığımız sınıfın metodlarını alt sınıflardan kullanmamızı sağlar<br>
-- super().init() metodu çalışırken sınıfın özelliklerini ve metotlarını kullanır.
-- 
+- super().init() metodu çalışırken sınıfın özelliklerini ve metotlarını kullanır.<br>
+- Base Class ana sınıftır.<br>
+- Sub Class, Base Class'ının özelliklerini ve metotlarını kullanır.<br>
+
