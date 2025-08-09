@@ -171,3 +171,122 @@
 ```
 
 **İLERİ BİRLEŞTİRME İŞLEMLERİ**<br>
+
+```
+    df1 = pd.DataFrame({"Çalışanlar": ["Ali", "Ayşe", "Mehmet", "Fatma"],
+                        "Grup": ["Koordinatör","Full Time Çalışan","Eğitim Koordinatörü","İş Geliştirme"]})
+    df1
+
+    df2 = pd.DataFrame({"Çalışanlar": ["Ali", "Ayşe", "Mehmet", "Fatma"],
+                    "İlk Giriş Yılları": [2021, 2019, 2022, 2018]})
+    df2
+```
+
+- .merge() fonksiyonu ile birebir birleştirme işlemlerini gerçekleştirebiliriz.<br>
+- Merge komutu ile yapılan işlemleri SQL'de bulunan inner join, outer join...'e benzetebiliriz.<br>
+
+```
+    pd.merge(df1, df2)
+    # DataFrame'leri "Çalışanlar" sütununa göre birleştirir
+
+    pd.merge(df1, df2, on="Çalışanlar")
+    # DataFrame'leri "Çalışanlar" sütununa göre birleştirir ve ortak sütunları alır
+```
+
+**TOPLULAŞTIRMA VE GRUPLAMA İŞLEMLERİ (AGGREGATION & GROUPING)**<br>
+
+Basit Toplulaştırma İşlemleri<br>
+
+- **count():** Eleman sayısı
+- **first(), last():** İlk ve son eleman
+- **mean(), median():** Ortalama ve medya
+- **min(), max():** Minimum ve maksimum değer
+- **std(), var():** Standart sapma ve varyans
+- **sum():** Toplam değer
+
+`pip install seaborn` ile kütüphaneyi yükleriz.<br>
+
+```
+    import seaborn as sns 
+    #seaborn kütüphanesini içe aktarır
+    df = sns.load_dataset("planets") 
+    #seaborn kütüphanesinden planets veri setini yükler
+    df.head()
+
+    df.shape 
+    #DataFrame'in boyutlarını döndürür
+
+    df.count() 
+    #DataFrame'deki her sütunun kaç tane değer içerdiğini döndürür
+
+    df["mass"].mean() 
+    #mass sütununun ortalamasını döndürür
+
+    df["mass"].count() 
+    #mass sütunundaki değerlerin sayısını döndürür
+
+    df["mass"].min() 
+    #mass sütununun minimum değerini döndürür
+
+    df["mass"].max() 
+    #mass sütununun maksimum değerini döndürür
+
+    df["mass"].sum() 
+    #mass sütununun toplamını döndürür
+
+    df["mass"].std() 
+    #mass sütununun standart sapmasını döndürür
+
+    df["mass"].var() 
+    #mass sütununun varyansını döndürür
+
+    df.describe() 
+    #DataFrame'in istatistiksel özetini döndürür
+
+    df.describe().T 
+    #DataFrame'in istatistiksel özetini transpoze eder
+
+    df.dropna().describe().T 
+    #NaN değerleri içermeyen DataFrame'in istatistiksel özetini transpoze eder
+```
+
+**GRUPLAMA İŞLEMLERİ (GROUPING)**<br>
+Gruplama işlemi veri serinde yer alan kategorik değişkenlerin gruplarının yakalanması ve gruplar özelinde gruplama işlemlerinin yapılması işlemidir.<br>
+
+```
+    df = pd.DataFrame({"Gruplar": ["A", "B", "C", "A", "B", "C"],
+                   "Veri": [10, 11, 52, 53, 43, 55]})
+    df
+
+    df.groupby("Gruplar").mean() 
+    #Gruplara göre ortalama değerleri hesaplar
+
+    df.groupby("Gruplar").sum() 
+    #Gruplara göre ortalama değerleri hesaplar
+```
+
+- .groupby() fonksiyonu ile gruplama işlemleri yapılır.<br>
+- sum(), mean(), count(), max(), min() gibi fonksiyonlar ile gruplama işlemleri yapılır.<br>
+
+```
+    df = sns.load_dataset("planets") 
+    df.head()
+
+    df.groupby("method")["orbital_period"].mean() 
+    #method sütununa göre orbital_period sütununun ortalamasını hesaplar 
+
+    df.groupby("method")["year"].describe()
+    #method sütununa göre year sütununun istatistiksel özetini döndürür
+```
+
+**İLERİ TOPLUMLAŞTIRMA İŞLEMLERİ (ADVANCED AGGREGATION)**<br>
+- .aggregate() fonksiyonu ile toplulaştırma işlemleri yapılır.<br>
+
+```
+    df = pd.DataFrame({
+        "Gruplar": ["A", "B", "C", "A", "B", "C"],
+        "Değişken1": [10, 11, 33, 22, 11, 99],
+        "Değişken2": [100, 252, 333, 262, 111, 969]})
+    df
+```
+
