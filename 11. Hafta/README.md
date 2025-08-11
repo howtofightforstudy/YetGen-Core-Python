@@ -280,7 +280,7 @@ Gruplama işlemi veri serinde yer alan kategorik değişkenlerin gruplarının y
 ```
 
 **İLERİ TOPLUMLAŞTIRMA İŞLEMLERİ (ADVANCED AGGREGATION)**<br>
-- .aggregate() fonksiyonu ile toplulaştırma işlemleri yapılır.<br>
+- aggregate() fonksiyonu ile toplulaştırma işlemleri yapılır.<br>
 
 ```
     df = pd.DataFrame({
@@ -288,5 +288,66 @@ Gruplama işlemi veri serinde yer alan kategorik değişkenlerin gruplarının y
         "Değişken1": [10, 11, 33, 22, 11, 99],
         "Değişken2": [100, 252, 333, 262, 111, 969]})
     df
+
+    df.groupby("Gruplar").aggregate(["min",np.median ,"max"])
+    #Gruplara göre min, medyan ve max değerleri hesaplar
+
+    df.groupby("Gruplar").aggregate({"Değişken1": "min", "Değişken2": "max"})
+    #DataFrame'de gruplara göre minimum ve maksimum değerleri hesaplar
 ```
 
+- filter() fonksiyonu ile gruplama işlemelrinden sonra gruplar üzerinde filtreleme işlemi yapılır.<br>
+
+```
+    def filter_func(x):
+    return x["Değişken1"].std() > 9
+    df.groupby("Gruplar").filter(filter_func)
+    #Gruplara göre Değişken1 sütununun standart sapması 9'd
+```
+
+**TRANSFORM**<br>
+- Verileri dönüştürmek için kullanılacak işlev.<br>
+
+```
+    dfa = df.iloc[:,1:3]  # DataFrame'den 1. ve 2. sütunları seçer
+    dfa.transform(lambda x: x - x.mean())
+    #DataFrame'deki her sütunun ortalamasını çıkarır
+```
+
+- apply() fonksiyonu kullanıcıya istediği bir fonksiyonu her bir değere uygulamasına izin verir.<br>
+
+```
+    df.apply(np.sum)
+    #DataFrame'deki her sütunun toplamını hesaplar
+
+    df.apply(np.min)
+    #DataFrame'deki her sütunun minimum değerini hesaplar
+
+    df.groupby("Gruplar").apply(np.sum)
+    #Gruplara göre her sütunun toplamını hesaplar
+```
+
+**PİVOT TABLOLAR (PIVOT TABLES)**<br>
+- Pivot tablolar, özellikle pandas kütüphanesinde verileri özetlemek, gruplamak ve farklı eksenler üzerinde yeniden düzenlemek için kullanılan güçlü bir araçtır.<br>
+
+```
+    import seaborn as sns
+    titanic = sns.load_dataset("titanic") # titanic veri setini yükler
+    titanic.head()
+
+    age= pd.cut(titanic["age"],[0,18,90]) 
+    #age sütununu 0-18 ve 18-90 yaş aralıklarına böler
+    titanic.pivot_table("survived",["sex",age],"class") 
+    #DataFrame'de cinsiyet ve yaş aralıklarına göre hayatta kalma oranlarını hesaplar
+```
+
+**DIŞARIDAN VERİ OKUMA**<br>
+
+```
+    ornekcsv = pd.DataFrame({
+    "Ad": ["Ali", "Ayşe", "Mehmet"],
+    "Soyad": ["Yılmaz", "Demir", "Kara"],
+    "Yaş": [25, 30, 22]})
+    ornekcsv.to_csv("ornekcsv.csv", sep=";") # DataFrame'i CSV dosyasına kaydeder
+    pd.read_csv("ornekcsv.csv",sep=";").head() #CSV dosyasını okur ve ilk 5 satırı gösterir
+```
